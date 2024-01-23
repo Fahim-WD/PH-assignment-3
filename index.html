@@ -1,11 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey's</title>
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- font-awsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Manrope G-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
+<!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-clr':'#FF4240',
+
+              }
+            }
+          }
+        }
+      </script>
+
+<!-- style css -->
+      <style>
+        .manrope-font{
+              font-family: 'Manrope', sans-serif;
+                        }
+         </style>
 </head>
-<body>
-    
+<body class="manrope-font">
+          
+    <!-- nav start -->
+   <nav class="container mx-auto ">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex  ">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="hover:text-primary-clr hover:font-semibold hover:bg-white">Home</a></li>
+            <li><a class="hover:text-primary-clr hover:font-semibold hover:bg-white">About</a></li>
+            <li><a class="hover:text-primary-clr hover:font-semibold hover:bg-white">Pages</a></li>
+            <li><a class="hover:text-primary-clr hover:font-semibold hover:bg-white">Blog</a></li>
+            <li><a class="hover:text-primary-clr hover:font-semibold hover:bg-white">Contact</a></li>
+        </div>
+        <div class="navbar-end">
+            <div class="mr-4 text-[#89898B] cursor-pointer hidden lg:flex den"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <a class="btn bg-primary-clr px-10 text-white text-xl hover:text-red-500">Get Ticket</a>
+        </div>
+      </div>
+   </nav>
+<!-- nav end -->
+
+<!-- banner start -->
+<section id="banner" class="container mx-auto mt-16 " >
+    <div class="carousel ">
+        <div id="slide1" class="carousel-item relative w-full  ">
+          <img src="Images/banner.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/banner.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/banner.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black mt-3  lg:w-1/2 lg:-mt-12">
+        <h3 class="text-white font-semibold text-2xl">Meet all the heroes from the field</h3>
+        <p class="text-[#ffffff99] leading-7">Dit amet consectetur. Condimentum dignissim <br> adipiscing aliquam turpis placerat dolor.  <br>Purus urna in sit nullam proin. </p>
+      </div>
+</section>
+<!-- banner end -->
+
+<!-- pro club start-->
+<section id="pro-club" class="container mx-auto mt-20 ">
+         <div class="text-center">
+            <h1 class="font-bold text-3xl">Professional Hockeys Club</h1>
+            <p class="text-[#13131899] leading-7 mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+         </div>
+<!-- progress -->
+         <div class="mt-16 lg:flex justify-between">
+            <div class="text-center" >
+                <div class="radial-progress text-primary-clr" style="--value:75;" role="progressbar">75%</div>
+                <h3 class="text-xl font-semibold pt-4">Prayer Facility</h3>
+                <p class="text-[#13131899] pt-2 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing</p>
+             </div>
+             <div class="text-center" >
+                <div class="radial-progress text-green-400" style="--value:60;" role="progressbar">60%</div>
+                <h3 class="text-xl font-semibold pt-4">Experienced Coach</h3>
+                <p class="text-[#13131899] pt-2 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing</p>
+             </div>
+             <div class="text-center" >
+                <div class="radial-progress text-yellow-400" style="--value:50;" role="progressbar">50%</div>
+                <h3 class="text-xl font-semibold pt-4">Senior Player</h3>
+                <p class="text-[#13131899] pt-2 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing</p>
+             </div>
+             <div class="text-center" >
+                <div class="radial-progress text-blue-500" style="--value:90;" role="progressbar">90%</div>
+                <h3 class="text-xl font-semibold pt-4">Training Ground</h3>
+                <p class="text-[#13131899] pt-2 leading-7">Amet consectetur. Condimentum <br> dignissim adipiscing</p>
+             </div>
+         </div>
+</section>
+<!-- pro club end -->
+
+<!-- program start -->
+<section id="program" class="mt-20 container mx-auto" >
+       <div class="text-center mb-2">
+        <h1 class="text-4xl font-bold">Program Sections</h1>
+        <p class="text-[#13131899] my-7">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis <br> placerat dolor. Purus urna in sit nullam proin.</p>
+       </div>
+<!-- card -->
+   <div class="lg:flex justify-between ">
+    <div class="card w-full image-full lg:w-2/5 ">
+    <figure><img src="Images/card-I.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Junior Program</h2>
+      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Register Now!</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card w-full image-full lg:w-2/5 ">
+    <figure><img src="Images/card-I.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Teenager Program</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae dolorum iste odio deleniti, quis dolorem labore ea nisi eius.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Register Now!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card w-full image-full ">
+    <figure><img src="Images/card-III.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Professional Program</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, fuga neque aliquid assumenda sequi laudantium dignissimos eaque. Adipisci, asperiores suscipit?</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Register Now!</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- program end -->
+
+<!-- Product start -->
+ <section id="Product" class="mt-20 container mx-auto">
+    <div class="text-center ">
+        <h1 class="text-4xl font-bold">Our New Products</h1>
+        <p class="text-[#13131899]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel similique illo aperiam voluptates esse eum, tempora error quos praesentium illum in <br> corporis debitis et dolores hic voluptas! Impedit, ipsum?</p>
+    </div>
+
+<!-- product card -->
+
+     <div class="lg:flex gap-20 justify-between mt-16">
+        
+        <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure ><img src="Images/jacket.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure><img src="Images/ball.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="Images/jacket.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="Images/jacket.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="Images/jacket.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="Images/jacket.png" alt="Movie"/></figure>
+            <div class="card-body">
+
+                <div class="flex ">
+                         <i class="fa-solid fa-star px-4 text-[#F99808]"><span class="text-[#13131880] pl-2">5.0</span></i>
+                         <i class="fa-regular fa-eye px-4"><span class="text-[#13131880] pl-2">20</span></i>
+                         <i class="fa-regular fa-heart"><span class="text-[#13131880] pl-2">200</span></i>
+                </div>
+              <h2 class="card-title font-extrabold">Football Varsity Jacket</h2>
+              <p class="text-[#13131899]">Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <h5 class="text-primary-clr font-bold">price-$22.00</h5>
+                <i class="flex pl-4"><img src="Images/cart.svg" alt="">Delivery Fee : Free</i>
+              </div>
+            </div>
+          </div> -->
+     </div>
+ </section>
+ <!-- product end -->
+
+ <!-- client start -->
+     <section id="client" class=" container mx-auto my-20">
+               <div class="text-center">
+                <h1 class="text-4xl font-extrabold">Clients Question</h1>
+                <p class="leading-7 text-[#13131899] pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum eveniet sapiente laudantium <br> aut cumque itaque magni architecto. Distinctio, enim?</p>
+            </div>
+
+            <div class="">
+                <div class=""> <img src="Images/Q&A.png" alt=""></div>
+
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Our Equipment
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Private Lessons
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Booking
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Pricings
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+            </div>
+     </section>
+     <!-- client end -->
+
+     <!-- Get in Touch start -->
+<section class="container mx-auto my-10">
+     <div class="text-center">
+        <h1 class="text-4xl font-extrabold ">Get In Touch</h1>
+        <p class="text-[#13131899] leading-7 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere dolor at nisi qui. Deleniti quia sunt eius harum tempora. <br> Consequatur exercitationem alias  tenetur nisi odio unde et voluptatum cumque!</p>
+     </div>
+
+
+     <!-- social  media -->
+    <div class="my-10 text-center bg-[#13131808] py-9 leading-10">
+           <h1 class="text-2xl font-extrabold">Social Media</h1>
+           
+            <i class=" px-4 fa-brands fa-twitter"></i>
+            <i class=" px-4 fa-brands fa-instagram"></i>
+            <i class=" px-4 fa-brands fa-facebook-f"></i>
+            <i class=" px-4 fa-brands fa-github"></i>
+    </div>
+</section>
+<!-- footer start -->
+<footer class="footer p-10 bg-black text-base-content text-white">
+    <aside>
+      <h1 class="text-3xl font-extrabold">Get In Touch</h1>
+      <p class="leading-7">Hockey’s since 1992<br/>Dhanmondi,Dhaka,Bangladesh</p>
+    </aside> 
+      
+    <nav>
+        <header class="text-white text-xl font-bold">Company</header> 
+        <a class="text-[#ffffff99] leading-7r mt-3">About us</a>
+        <a class="text-[#ffffff99] leading-7 ">Contact</a>
+        <a class="text-[#ffffff99] leading-7 ">Leadership</a>
+        <a class="text-[#ffffff99] leading-7">News $ Article</a>
+        <a class="text-[#ffffff99] leading-7">Legal Notice</a>
+      </nav> 
+
+    <nav>
+      <header class="text-white text-xl font-bold">Support</header> 
+      <a class="text-[#ffffff99] leading-7 mt-3">Help Center</a>
+      <a class="text-[#ffffff99] leading-7">FAQ</a>
+      <a class="text-[#ffffff99] leading-7">Ticket Support</a>
+      <a class="text-[#ffffff99] leading-7">Contact Us</a>
+    </nav>
+
+    <nav>
+        <header class="text-white text-xl font-bold">Services</header> 
+        <a class="text-[#ffffff99] leading-7 mt-3">Academy</a>
+        <a class="text-[#ffffff99] leading-7">Group Lesson</a>
+        <a class="text-[#ffffff99] leading-7">Privet Lesson</a>
+        <a class="text-[#ffffff99] leading-7">Hockeys for kids</a>
+        <a class="text-[#ffffff99] leading-7">Hockeys for Adult</a>
+      </nav> 
+  </footer>
 </body>
 </html>
