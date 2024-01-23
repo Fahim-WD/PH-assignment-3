@@ -22,7 +22,6 @@
               colors: {
                 clifford: '#da373d',
                 'primary-clr':'#FF4240',
-
               }
             }
           }
@@ -73,7 +72,7 @@
 <!-- nav end -->
 
 <!-- banner start -->
-<section id="banner" class="container mx-auto mt-16 " >
+<section id="banner" class="container mx-auto mt-16 lg:relative " >
     <div class="carousel ">
         <div id="slide1" class="carousel-item relative w-full  ">
           <img src="Images/banner.png" class="w-full" />
@@ -97,9 +96,9 @@
           </div>
         </div>
       </div>
-      <div class="bg-black mt-3  lg:w-1/2 lg:-mt-12">
-        <h3 class="text-white font-semibold text-2xl">Meet all the heroes from the field</h3>
-        <p class="text-[#ffffff99] leading-7">Dit amet consectetur. Condimentum dignissim <br> adipiscing aliquam turpis placerat dolor.  <br>Purus urna in sit nullam proin. </p>
+      <div class="bg-black py-6 rounded-lg mt-3 lg:absolute  lg:w-1/2 lg:-mt-60 lg:right-10">
+        <h3 class="text-white font-semibold text-2xl text-center">Meet all the heroes from the field</h3>
+        <p class="text-[#ffffff99] leading-7 text-center mt-4 leading-7">Dit amet consectetur. Condimentum dignissim <br> adipiscing aliquam turpis placerat dolor.Purus urna in sit nullam proin. </p>
       </div>
 </section>
 <!-- banner end -->
@@ -143,37 +142,34 @@
         <p class="text-[#13131899] my-7">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis <br> placerat dolor. Purus urna in sit nullam proin.</p>
        </div>
 <!-- card -->
-   <div class="lg:flex justify-between ">
-    <div class="card w-full image-full lg:w-2/5 ">
-    <figure><img src="Images/card-I.png" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Junior Program</h2>
-      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-      <div class="card-actions">
-        <button class="btn btn-primary">Register Now!</button>
+   <div class="grid lg:grid-cols-1 lg:flex gap-5 ">
+    <div class="bg-[url(./Images/card-I.png)] bg-cover bg-center bg-no-repeat  rounded-lg  card w-full image-full lg:col-span-1">
+      <div class="card-body lg:py-20">
+        <h2 class="text-3xl font-bold">Teenager Program</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae dolorum iste odio deleniti, quis dolorem labore ea nisi eius.</p>
+        <div class="card-actions">
+          <button class="btn bg-primary-clr border-none">Register Now!</button>
+        </div>
       </div>
-    </div>
   </div>
 
-  <div class="card w-full image-full lg:w-2/5 ">
-    <figure><img src="Images/card-I.png" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Teenager Program</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae dolorum iste odio deleniti, quis dolorem labore ea nisi eius.</p>
+  <div class="bg-[url(./Images/card-II.png)] bg-cover bg-center bg-no-repeat rounded-lg lg:col-span-1  card w-full image-full  ">
+    <div class="card-body lg:py-20">
+      <h2 class="text-3xl font-bold">Teenager Program</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</p>
       <div class="card-actions">
-        <button class="btn btn-primary">Register Now!</button>
+        <button class="btn bg-primary-clr border-none">Register Now!</button>
       </div>
     </div>
   </div>
 </div>
-<div class="card w-full image-full ">
-    <figure><img src="Images/card-III.png" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Professional Program</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, fuga neque aliquid assumenda sequi laudantium dignissimos eaque. Adipisci, asperiores suscipit?</p>
+<div class="bg-[url(./Images/card-III.png)] bg-cover bg-center bg-no-repeat rounded-lg lg:col-span-1  card w-full image-full  mt-5">
+    <div class="card-body lg:py-20">
+      <h2 class="text-3xl font-bold">Professional Program</h2>
+      <p class="leading-10 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloremque! Rerum nobis impedit molestias iure earum maiores, reprehenderit, quisquam quos vel placeat quia soluta architecto a itaque ut voluptate magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum ut voluptatum esse ad ducimus eligendi vel quasi ratione, eaque vitae </p>
       <div class="card-actions">
-        <button class="btn btn-primary">Register Now!</button>
+        <button class="btn bg-primary-clr border-none">Register Now!</button>
       </div>
     </div>
   </div>
@@ -385,8 +381,8 @@
         <p class="text-[#13131899] leading-7 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere dolor at nisi qui. Deleniti quia sunt eius harum tempora. <br> Consequatur exercitationem alias  tenetur nisi odio unde et voluptatum cumque!</p>
      </div>
 
-         <div class="mt-16">
-           <!-- left side -->
+         <div class="mt-16 lg:flex gap-10">
+           <!-- left side contact -->
            <div class="lg:w-1/3 border-2 border-gray-200 p-6 rounded">
                 <div class="bg-[#bced6d1a] p-12 my-9 ">
                   <i><img  class="mb-7" src="Images/phone.png" alt=""></i>
@@ -405,8 +401,24 @@
                   <p class="text-[#13131866] mb-4">Location : </p>
                   <h3 class="font-extrabold text-xl">152/1 Mohakhali Wireless Gate</h3>
                 </div>
-                
            </div>
+          <!-- right side smsform -->
+                     <div class=" lg:w-4/6   grid grid-cols-1  col-span-1 lg:grid-cols-2 gap-6 ">
+
+                    <div class="flex col-1 flex-col">
+                      <label for="name" class="text-2xl font-bold">Your Name</label>
+                      <input type="text"   placeholder="Enter your full name"
+                      class="bg-[#13131808] px-6 py-6 rounded-lg outline-none mt-3">
+                    </div>
+
+                    <div class="flex  flex-col">
+                      <label for="name" class="text-2xl font-bold">Your Name</label>
+                      <input type="text"   placeholder="Enter your full name"
+                      class="bg-[#13131808] p-6 rounded-lg outline-none mt-3">
+                    </div>
+                   
+                    
+                     </div>
          </div>
 
 
@@ -421,7 +433,7 @@
     </div>
 </section>
 <!-- footer start -->
-<footer class="footer p-10 bg-black text-base-content text-white">
+<footer class="footer p-10 bg-black text-base-content text-white grid">
     <aside>
       <h1 class="text-3xl font-extrabold">Get In Touch</h1>
       <p class="leading-7">Hockey’s since 1992<br/>Dhanmondi,Dhaka,Bangladesh</p>
